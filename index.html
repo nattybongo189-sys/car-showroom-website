@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velora Motors | Premium Car Showroom</title>
+    <meta
+      name="description"
+      content="Premium car showroom website featuring luxury, performance, and family cars."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar container">
+        <div class="logo-wrap">
+          <div class="logo-mark">V</div>
+          <div class="logo-text">
+            <span>Velora</span>
+            <small>Motors</small>
+          </div>
+        </div>
+
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#inventory">Inventory</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <button class="nav-btn">Book a Test Drive</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Drive the future</span>
+            <h1>Find your perfect <span>performance machine</span>.</h1>
+            <p>
+              Discover premium cars built for power, comfort, and everyday luxury.
+              Explore our latest models and schedule a test drive today.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#inventory" class="primary-btn">Explore Cars</a>
+              <a href="#contact" class="secondary-btn">Get in Touch</a>
+            </div>
+
+            <div class="stats">
+              <div>
+                <strong>1200+</strong>
+                <span>Cars Sold</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>Support</span>
+              </div>
+              <div>
+                <strong>4.9/5</strong>
+                <span>Customer Rating</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="car-card featured-car">
+              <div class="car-badge">New Arrival</div>
+              <div class="car-image-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80"
+                  alt="Luxury sport car"
+                />
+              </div>
+              <div class="car-summary">
+                <div>
+                  <h3>2025 Tesla Roadster</h3>
+                  <p>Electric Grand Touring</p>
+                </div>
+                <div class="price">$89,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brands container">
+        <span>Trusted by drivers from</span>
+        <div class="brand-row">
+          <span>Tesla</span>
+          <span>BMW</span>
+          <span>Mercedes</span>
+          <span>Audi</span>
+          <span>Ford</span>
+          <span>Porsche</span>
+        </div>
+      </section>
+
+      <section class="inventory container" id="inventory">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Our inventory</span>
+            <h2>Handpicked cars for every journey</h2>
+          </div>
+          <div class="filter-group" aria-label="Car filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="sport">Sport</button>
+            <button class="filter-btn" data-filter="luxury">Luxury</button>
+            <button class="filter-btn" data-filter="family">Family</button>
+            <button class="filter-btn" data-filter="electric">Electric</button>
+          </div>
+        </div>
+
+        <div class="car-grid">
+          <article class="car-item" data-category="sport">
+            <div class="car-image">
+              <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Porsche 911" />
+            </div>
+            <div class="car-info">
+              <div class="car-topline">
+                <h3>Porsche 911</h3>
+                <span class="tag">Sport</span>
+              </div>
+              <div class="specs">
+                <span>3.0L Turbo</span>
+                <span>Automatic</span>
+                <span>2 Door</span>
+              </div>
+              <div class="card-footer">
+                <strong>$112,000</strong>
+                <button>View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-item" data-category="luxury">
+            <div class="car-image">
+              <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=900&q=80" alt="Mercedes S-Class" />
+            </div>
+            <div class="car-info">
+              <div class="car-topline">
+                <h3>Mercedes S-Class</h3>
+                <span class="tag">Luxury</span>
+              </div>
+              <div class="specs">
+                <span>V8</span>
+                <span>AWD</span>
+                <span>4 Door</span>
+              </div>
+              <div class="card-footer">
+                <strong>$126,800</strong>
+                <button>View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-item" data-category="family">
+            <div class="car-image">
+              <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=900&q=80" alt="BMW X5" />
+            </div>
+            <div class="car-info">
+              <div class="car-topline">
+                <h3>BMW X5</h3>
+                <span class="tag">Family</span>
+              </div>
+              <div class="specs">
+                <span>Hybrid</span>
+                <span>7 Seats</span>
+                <span>AWD</span>
+              </div>
+              <div class="card-footer">
+                <strong>$83,400</strong>
+                <button>View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-item" data-category="electric">
+            <div class="car-image">
+              <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=900&q=80" alt="Tesla Model S" />
+            </div>
+            <div class="car-info">
+              <div class="car-topline">
+                <h3>Tesla Model S</h3>
+                <span class="tag">Electric</span>
+              </div>
+              <div class="specs">
+                <span>Dual Motor</span>
+                <span>Long Range</span>
+                <span>Auto Pilot</span>
+              </div>
+              <div class="card-footer">
+                <strong>$91,200</strong>
+                <button>View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-item" data-category="luxury">
+            <div class="car-image">
+              <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=900&q=80" alt="Audi RS7" />
+            </div>
+            <div class="car-info">
+              <div class="car-topline">
+                <h3>Audi RS7</h3>
+                <span class="tag">Luxury</span>
+              </div>
+              <div class="specs">
+                <span>4.0L V8</span>
+                <span>Quattro</span>
+                <span>4 Door</span>
+              </div>
+              <div class="card-footer">
+                <strong>$118,900</strong>
+                <button>View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="car-item" data-category="family">
+            <div class="car-image">
+              <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=900&q=80" alt="Range Rover Evoque" />
+            </div>
+            <div class="car-info">
+              <div class="car-topline">
+                <h3>Range Rover Evoque</h3>
+                <span class="tag">Family</span>
+              </div>
+              <div class="specs">
+                <span>2.0L Diesel</span>
+                <span>5 Seats</span>
+                <span>Panoramic</span>
+              </div>
+              <div class="card-footer">
+                <strong>$77,300</strong>
+                <button>View Details</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="features container" id="why-us">
+        <div class="section-heading left">
+          <span class="eyebrow">Why choose us</span>
+          <h2>Luxury service with every mile</h2>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <div class="icon">01</div>
+            <h3>Certified Quality</h3>
+            <p>Every vehicle goes through strict quality checks and full inspections.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon">02</div>
+            <h3>Flexible Financing</h3>
+            <p>Personalized finance plans designed to fit your budget and lifestyle.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon">03</div>
+            <h3>Trade-in Support</h3>
+            <p>Upgrade your ride with instant evaluation and competitive trade-in offers.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon">04</div>
+            <h3>Nationwide Delivery</h3>
+            <p>We arrange secure transport across the country with full support.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial-section container" id="reviews">
+        <div class="section-heading left">
+          <span class="eyebrow">Testimonials</span>
+          <h2>What our customers say</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “The team made buying my dream car effortless. Professional, transparent,
+              and genuinely passionate about the cars they sell.”
+            </p>
+            <div class="person">
+              <strong>Olivia M.</strong>
+              <span>BMW X5 buyer</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “The test drive experience was amazing and the financing process was simple.
+              Highly recommended for premium vehicle shopping.”
+            </p>
+            <div class="person">
+              <strong>Daniel T.</strong>
+              <span>Porsche 911 buyer</span>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>
+              “From the first call to final delivery, everything felt premium. The showroom
+              team really knows what they’re doing.”
+            </p>
+            <div class="person">
+              <strong>Sophia R.</strong>
+              <span>Tesla Model S buyer</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta container" id="contact">
+        <div class="cta-box">
+          <div>
+            <span class="eyebrow">Book your drive</span>
+            <h2>Ready to upgrade your ride?</h2>
+          </div>
+          <a href="mailto:sales@veloramotors.com" class="primary-btn">Contact Sales</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="logo-wrap">
+          <div class="logo-mark">V</div>
+          <div class="logo-text">
+            <span>Velora</span>
+            <small>Motors</small>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#inventory">Inventory</a>
+          <a href="#why-us">Why Us</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <p>© 2025 Velora Motors. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
